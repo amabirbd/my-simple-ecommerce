@@ -1,3 +1,5 @@
+{% extends "base_layout.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,25 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>abir's marketplace</title>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <style>
-        body{ font-family: 'Ubuntu', sans-serif; }
-        .container{
-            padding: 20px;
-        }
-        img{
-            max-width: 500px;
-            max-height: 350px;
-        }
-        
-    </style>
+
 
 </head>
 <body>
     {% block content %}
     <div class="container">
         <h2> {{ product_dtl.title }} </h2>
-        <img src=" {{product_dtl.photo.url}} " alt="product photo">
+        <img src=" {{product_dtl.photo.url}} " class="dtl-photo" alt="product photo">
         <p> Category: {{ product_dtl.category }} </p>
         <p> Quantity : {{ product_dtl.quantity }} </p>
         <p> Details : {{ product_dtl.detail }} </p>

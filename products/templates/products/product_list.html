@@ -1,3 +1,4 @@
+{% extends "base_layout.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>abir's marketplace</title>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
-    <style>
-        *{ font-family: 'Ubuntu', sans-serif; }
-    </style>
+
 
 </head>
 <body>
@@ -16,14 +14,22 @@
 
         <h1 class="main-header">Available Products </h1>
 
-        <div class="products">
-            {% for product in products %}
-                <h2><a href="{% url 'products:detail' product_id=product.id %}">{{ product.title }}</a></h2>
-                <p>{{product.snippet}}</p>
-                <p style="color: darkorange">{{product.category}}</p>
-            {% endfor %}
-        </div>
+        {% for product in products %}
+            <div class="card" >
+            <img src="{{product.photo.url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.title }}</h5>
+                        <p class="card-text">{{product.snippet}}</p>
+                    <a href="{% url 'products:detail' product_id=product.id %}" id="main-bt" class="btn btn-primary">view</a>
+                </div>
+            </div>
+        {% endfor %}
+      
 
     {% endblock %}  
 </body>
 </html>
+
+
+
+
