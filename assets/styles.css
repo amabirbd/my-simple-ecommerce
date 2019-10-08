@@ -19,7 +19,7 @@ p {
 
 
 .card {
-    width: 18rem;
+    width: 19rem;
     float: left;
     padding: 10px;
     margin: 10px;
@@ -33,7 +33,9 @@ p {
 }
 
 #main-bt {
-    position: relative;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .card-img-top {

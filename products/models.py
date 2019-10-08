@@ -4,7 +4,7 @@ from django.dispatch import receiver
 
 
 class Product(models.Model):
-    id = models.BigIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=200)
     #slug = models.SlugField()
     detail = models.TextField()
