@@ -13,11 +13,13 @@
 <body>
     {% block content %}
     <div class="container">
-        <h2> {{ product_dtl.title }} </h2>
-        <img src=" {{product_dtl.photo.url}} " class="dtl-photo" alt="product photo">
-        <p> Category: {{ product_dtl.category }} </p>
-        <p> Quantity : {{ product_dtl.quantity }} </p>
-        <p> Details : {{ product_dtl.detail }} </p>
+        <div class="productDtl">
+            <h2> {{ product_dtl.title }} </h2>
+            <img src=" {{product_dtl.photo.url}} " class="dtl-photo" alt="product photo">
+            <p> Category: {{ product_dtl.category }} </p>
+            <p> Quantity : {{ product_dtl.quantity }} </p>
+            <p> Details : {{ product_dtl.detail }} </p>
+        </div>
     </div>
 
     {% endblock %}  
