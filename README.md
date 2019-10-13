@@ -1,5 +1,9 @@
 # my-simple-ecommerce
-trying to implement a e-commerce site
+An e-commerce website
+
+#Requirements
+
+    -install django , django-crispy-forms
 
 #Avialable Feature
 
