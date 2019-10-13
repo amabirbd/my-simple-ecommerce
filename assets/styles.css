@@ -5,16 +5,24 @@
 
 body {}
 
+.lnk{
+    text-decoration: none;
+}
+
 
 p {
     font-size: 1.2em;
 }
 
+li{
+    list-style-type: none;
+}
 .logo {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #4CAF50;
     font-size: 500%;
     align-self: center;
+    text-decoration: none;
 }
 
 .container {
@@ -75,9 +83,11 @@ p {
     position: relative;
     left: 10px;
     top: -75px;
+    margin: 5px;
 
 }
 
 .main_header {
     display: inline-block;
 }
+

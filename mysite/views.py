@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from . import forms
 
-
+'''
 def signup(request):
     if request.method == 'POST':
         form = forms.SignUpForm(request.POST)
@@ -17,3 +17,4 @@ def signup(request):
     else:
         form = forms.SignUpForm()
     return render(request, 'signup.html', {'form': form})
+'''
