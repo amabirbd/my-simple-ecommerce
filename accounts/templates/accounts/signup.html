@@ -1,6 +1,7 @@
 {% extends 'base_layout.html' %}
 {% load crispy_forms_tags %}
-
+{% load socialaccount %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <div class="container">
@@ -12,6 +13,7 @@
     {% csrf_token %}
       {{ form|crispy }}
     <button type="submit" class="btn btn-primary btn-lg">Sign up</button>
+    <a href="{% provider_login_url 'github' %}"style="display: block;margin-top: 10px;">Github signup</a>
   </form>
 {% endblock  %}
 </div>
