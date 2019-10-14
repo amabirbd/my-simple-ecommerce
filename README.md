@@ -1,18 +1,22 @@
 # my-simple-ecommerce
-trying to implement a e-commerce site
+An e-commerce website
+
+#Requirements
+
+    -install django , django-crispy-forms
 
 #Avialable Feature
 
     -admin can add a product with a title , detail , category , id , category , an image
     -users can just check out the available products
+    -Sign up and login option
 
 #Features to add
     
-    -Sign up and login option
-    -sign in with facebook and google option 
+    
+    -facebook and google authentication 
     -a shopping cart for coustomers
     -chatting option
-    -inependent static file folder
-    -search option
+    -search product
 
     
