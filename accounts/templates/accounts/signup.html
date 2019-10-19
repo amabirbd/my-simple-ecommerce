@@ -13,7 +13,12 @@
     {% csrf_token %}
       {{ form|crispy }}
     <button type="submit" class="btn btn-primary btn-lg">Sign up</button>
-    <a href="{% provider_login_url 'github' %}"style="display: block;margin-top: 10px;">Github signup</a>
+    
   </form>
+    <div class="ic">
+      <a href="{% provider_login_url 'github' %}" class="social_log"> <i class="fab fa-github fa-3x"></i> </a>
+      <a href="{% provider_login_url 'github' %}" class="social_log"> <i class="fab fa-facebook-square fa-3x"></i> </a>
+      <a href="{% provider_login_url 'github' %}" class="social_log"> <i class="fab fa-google fa-3x"></i> </a>
+    </div>
 {% endblock  %}
 </div>

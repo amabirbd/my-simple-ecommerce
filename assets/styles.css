@@ -92,3 +92,17 @@ li{
     display: inline-block;
 }
 
+.sign_up{
+    margin-top: 50px;
+}
+
+.social_log :hover {
+    color: black;
+}
+
+.ic{
+    margin-top: 10px;
+}
+.ic > *{
+    margin-left: 10px;
+}

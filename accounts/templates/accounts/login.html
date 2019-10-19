@@ -1,5 +1,6 @@
 {% extends 'base_layout.html' %}
 {% load crispy_forms_tags %}
+{% load socialaccount %}
 
 
 {% block content %}
@@ -12,5 +13,11 @@
         {% endif %}
         <button type="submit" class="btn btn-primary btn-lg">Log in</button>
     </form>
-    <p>Not got an account? <a href="{% url 'accounts:signup' %}">Sign Up</a></p>
+
+        <div class="ic">
+            <a href="{% provider_login_url 'github' %}" class="social_log"> <i class="fab fa-github fa-3x"></i> </a>
+            <a href="{% provider_login_url 'github' %}" class="social_log"> <i class="fab fa-facebook-square fa-3x"></i> </a>
+            <a href="{% provider_login_url 'github' %}" class="social_log"> <i class="fab fa-google fa-3x"></i> </a>
+        </div>
+    <p class="sign_up">Not got an account? <a href="{% url 'accounts:signup' %}">Sign Up</a></p>
 {% endblock %}
