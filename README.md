@@ -1,23 +1,16 @@
-# my-simple-ecommerce
-An e-commerce website
-
-#Requirements
-
-    -install django , django-crispy-forms
-
-#Avialable Feature
-
-    -admin can add a product with a title , detail , category , id , category , an image
-    -users can just check out the available products
-    -Sign up and login option
-    -github authentication added ( facebook doesn't let u use the api if you don't have a valid domain)
-
-#Features to add
-    
-    
-    -facebook and google authentication 
-    -a shopping cart for coustomers
-    -chatting option
-    -search product
-
-    
+# django-blog
+Requirements:<br>
+ 
+  <code>python</code>
+  <code>Django</code>
+  <code>django-crispy-form</code><br>
+  
+  
+# Installing:
+In terminal - <br>
+  <code>git clone https://github.com/amabirbd/my-simple-ecommerce.git</code> <br>
+  <code>cd my-simple-ecommerce</code> <br>
+  <code>python manage.py runserver</code> <br>
+  
+it will start the development server and you can visit the site at- <br>  
+<code>http://127.0.0.1:8000/</code>
